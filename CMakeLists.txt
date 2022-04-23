@@ -15,8 +15,20 @@ add_executable(
         util/WMHolder.cpp
         util/WMHolder.h
         lab_1/PrimitivesWMHolder.cpp
-        lab_1/PrimitivesWMHolder.h util/utils.cpp util/utils.h lab_1/Color.cpp lab_1/Color.h lab_1/Point.cpp lab_1/Point.h lab_1/TriangleStrip.cpp lab_1/TriangleStrip.h lab_1/TriangleStripManager.cpp lab_1/TriangleStripManager.h util/VerticesDelimiter.h)
+        lab_1/PrimitivesWMHolder.h
+        util/utils.cpp
+        util/utils.h
+        lab_1/Color.cpp
+        lab_1/Color.h
+        lab_1/Point.cpp
+        lab_1/Point.h
+        lab_1/TriangleStrip.cpp
+        lab_1/TriangleStrip.h
+        lab_1/TriangleStripManager.cpp
+        lab_1/TriangleStripManager.h
+        util/VerticesDelimiter.h
+)
 
 target_link_libraries(ComputerGraphics ${OPENGL_LIBRARIES})
 target_link_libraries(ComputerGraphics ${GLUT_LIBRARIES})
-target_link_libraries(ComputerGraphics -lopengl32 -g -lfreeglut -std=c++17)
+target_link_libraries(ComputerGraphics -lopengl32 -g -lfreeglut)

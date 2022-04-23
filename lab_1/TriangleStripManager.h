@@ -28,6 +28,7 @@ public:
 private:
     void deactivate_current_ts();
     void activate_current_ts();
+    bool is_current_ts_valid();
 
 private:
     std::vector<TriangleStrip> triangle_strips;

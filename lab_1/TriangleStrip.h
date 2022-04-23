@@ -36,6 +36,7 @@ private:
     void unhighlight_selected_vertex();
     void unhighlight_colors();
     void unhighlight_vertices();
+    void select_nearest_vertex(const Coordinates &coords);
 
 private:
     std::vector<Point> vertices;
@@ -43,8 +44,6 @@ private:
     Color secondary_color{};
     bool edit_mode_enabled;
     int selected_vertex_ind;
-
-    void select_nearest_vertex(const Coordinates &coords);
 };
 
 

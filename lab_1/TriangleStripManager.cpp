@@ -39,6 +39,12 @@ void TriangleStripManager::start_new_ts()
 {
     if (!triangle_strips.empty())
     {
+        if (is_current_ts_valid())
+        {
+            // We don't need to create new TS if current is still invalid.
+            return;
+        }
+
         triangle_strips[current_ts_ind].unhighlight();
     }
 
@@ -47,11 +53,24 @@ void TriangleStripManager::start_new_ts()
     triangle_strips[current_ts_ind].highlight();
 }
 
+bool TriangleStripManager::is_current_ts_valid()
+{
+    // The most basic TS should have at least 3 vertices
+    return triangle_strips[current_ts_ind].get_vertices().size() < 3;
+}
+
 void TriangleStripManager::move_back()
 {
     if (current_ts_ind >= 1)
     {
         deactivate_current_ts();
+        if (is_current_ts_valid())
+        {
+            // We should not keep an invalid TS.
+            // If the TS is invalid, then it is definitely the last in the list.
+            triangle_strips.pop_back();
+        }
+
         current_ts_ind--;
         activate_current_ts();
     }
