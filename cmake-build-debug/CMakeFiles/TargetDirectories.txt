@@ -1,3 +1,0 @@
-D:/University/year_3/ComputerGraphics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/University/year_3/ComputerGraphics/cmake-build-debug/CMakeFiles/ComputerGraphics.dir
-D:/University/year_3/ComputerGraphics/cmake-build-debug/CMakeFiles/edit_cache.dir
