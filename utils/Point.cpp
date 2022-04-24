@@ -14,15 +14,15 @@ Coordinates::Coordinates(float x, float y) :
     y(y)
 {}
 
-//float Coordinates::get_x() const
-//{
-//    return x;
-//}
-//
-//float Coordinates::get_y() const
-//{
-//    return y;
-//}
+float Coordinates::get_x() const
+{
+    return x;
+}
+
+float Coordinates::get_y() const
+{
+    return y;
+}
 
 void Coordinates::gl_specify() const
 {
@@ -40,6 +40,10 @@ float Coordinates::distance_to(const Coordinates &other) const
 Point::Point(const Coordinates &coords, const Color &color) :
     coordinates(coords),
     color(color)
+{}
+
+Point::Point() :
+        coordinates({0.0, 0.0})
 {}
 
 void Point::gl_specify() const

@@ -1,0 +1,15 @@
+//
+// Created by apasemko on 4/23/2022.
+//
+
+#ifndef COMPUTERGRAPHICS_POLYGONMANAGER_H
+#define COMPUTERGRAPHICS_POLYGONMANAGER_H
+
+
+class PolygonManager
+{
+
+};
+
+
+#endif //COMPUTERGRAPHICS_POLYGONMANAGER_H

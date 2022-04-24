@@ -5,7 +5,6 @@
 #ifndef COMPUTERGRAPHICS_UTILS_H
 #define COMPUTERGRAPHICS_UTILS_H
 
-#include "../lab_1/PrimitivesWMHolder.h"
 namespace util
 {
     void run_window();

@@ -11,14 +11,15 @@ namespace
         TOGGLE_EDIT_MODE,
         REMOVE_ALL,
         REMOVE_CURRENT_TS,
-        REMOVE_VERTEX
+        REMOVE_VERTEX,
+        UNKNOWN_OPTION
     };
 
     MenuOption g_current_option;
 
     void setup_menu()
     {
-        g_current_option = TOGGLE_EDIT_MODE;
+        g_current_option = UNKNOWN_OPTION;
 
         // Add menu items
         glutAddMenuEntry("Toggle Edit Mode (or press 'a')", TOGGLE_EDIT_MODE);

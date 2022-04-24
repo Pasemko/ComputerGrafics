@@ -5,7 +5,7 @@
 #ifndef COMPUTERGRAPHICS_PRIMITIVESWMHOLDER_H
 #define COMPUTERGRAPHICS_PRIMITIVESWMHOLDER_H
 
-#include "../util/WMHolder.h"
+#include "../utils/WMHolder.h"
 #include "PrimitivesWM.h"
 
 

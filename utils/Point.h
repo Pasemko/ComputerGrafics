@@ -11,8 +11,8 @@ class Coordinates
 {
 public:
     Coordinates(float x, float y);
-//    float get_x() const;
-//    float get_y() const;
+    float get_x() const;
+    float get_y() const;
     void gl_specify() const;
     float distance_to(const Coordinates &other) const;
 
@@ -25,6 +25,9 @@ class Point
 {
 public:
     Point(const Coordinates &coords, const Color &color);
+
+    Point();
+
     void gl_specify() const;
     void highlight();
     void unhighlight();

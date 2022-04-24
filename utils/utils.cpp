@@ -5,6 +5,8 @@
 #include "utils.h"
 #include <tuple>
 #include "VerticesDelimiter.h"
+#include "../lab_1/PrimitivesWMHolder.h"
+#include "../lab_2/PrimitivesRasteringWMHolder.h"
 
 namespace util
 {
@@ -72,7 +74,9 @@ namespace util
 
         void init_window_manager()
         {
-            window_manager_holder = std::make_shared<PrimitivesWMHolder>();
+            /// For now to check out between labs windows we need manually replace the WMH.
+//            window_manager_holder = std::make_shared<PrimitivesWMHolder>();
+            window_manager_holder = std::make_shared<PrimitivesRasteringWMHolder>();
             window_manager_holder->init();
         }
 

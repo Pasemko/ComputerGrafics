@@ -3,7 +3,7 @@
 //
 
 #include "TriangleStrip.h"
-#include "../util/VerticesDelimiter.h"
+#include "../utils/VerticesDelimiter.h"
 
 TriangleStrip::TriangleStrip() :
     edit_mode_enabled(false),

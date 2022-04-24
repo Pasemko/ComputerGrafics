@@ -1,19 +1,19 @@
 //
-// Created by apasemko on 4/16/2022.
+// Created by apasemko on 4/23/2022.
 //
 
-#ifndef COMPUTERGRAPHICS_PRIMITIVESWM_H
-#define COMPUTERGRAPHICS_PRIMITIVESWM_H
+#ifndef COMPUTERGRAPHICS_PRIMITIVESRASTERINGWM_H
+#define COMPUTERGRAPHICS_PRIMITIVESRASTERINGWM_H
 
 #include "../utils/WindowManager.h"
-#include "TriangleStripManager.h"
+#include "PolygonManager.h"
 
 
-class PrimitivesWM :
+class PrimitivesRasteringWM :
         public WindowManager
 {
 public:
-    PrimitivesWM();
+    PrimitivesRasteringWM();
 
     void on_display() override;
     void on_mouse_input(int button, int state, float x, float y) override;
@@ -22,8 +22,8 @@ public:
     void on_select_menu_option(int option) override;
 
 private:
-    TriangleStripManager ts_manager {};
+    PolygonManager polygon_manager;
 };
 
 
-#endif //COMPUTERGRAPHICS_PRIMITIVESWM_H
+#endif //COMPUTERGRAPHICS_PRIMITIVESRASTERINGWM_H

@@ -5,7 +5,7 @@
 #ifndef COMPUTERGRAPHICS_TRIANGLESTRIP_H
 #define COMPUTERGRAPHICS_TRIANGLESTRIP_H
 
-#include "Point.h"
+#include "../utils/Point.h"
 #include <vector>
 
 
